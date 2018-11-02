@@ -56,25 +56,6 @@ def solveSudoku(board):
 
 ###### Test Cases
 
-def testEvaluate():
-    print('Testing evaluate...', end='')
-    assert(evaluate(2, 3, '+') == 5)
-    assert(evaluate(3, 2, "+") == 5)
-    assert(evaluate(5, 6, "*") == 30)
-    assert(evaluate(6, 5, "*") == 30)
-    assert(evaluate(5, 6, '-') == -1)
-    assert(evaluate(6, 5, '-') == 1)
-    print('passed!')
-
-def testEvalPrefixNotation():
-    print('Testing evalPrefixNotation...', end='')
-    assert(evalPrefixNotation(['+', 2, '*', 3, 4]) == 14)
-    assert(evalPrefixNotation([4]) == 4)
-    assert(evalPrefixNotation(['+', '*', 2, 3, '*', 4, 5]) == 26)
-    assert(evalPrefixNotation(
-        ['*', '+', 2, '*', 3, '-', 8, 7, '+', '*', 2, 2, 5]) == 45)
-    print('passed!')
-
 board1 = [
         [ 5, 3, 0, 0, 7, 0, 0, 0, 0 ],
         [ 6, 0, 0, 1, 9, 5, 0, 0, 0 ],
